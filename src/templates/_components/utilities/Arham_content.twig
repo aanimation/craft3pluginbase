@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * ArhamPlugin plugin for Craft CMS
+ *
+ * Arham Utility Content
+ *
+ * @author    Arham
+ * @copyright Copyright (c) 2020 Arham
+ * @link      https://github.com/aanimation/craft3pluginbase
+ * @package   ArhamPlugin
+ * @since     1.0.0
+ */
+#}
+
+<h1>Arham</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@aanimation/arhamplugin/assetbundles/arhamutility/dist', true) ~ '/img/Arham-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>

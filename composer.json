@@ -1,0 +1,43 @@
+{
+    "name": "aanimation/arham-plugin",
+    "description": "Plugin base structures for Craft 3.x",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "arhamplugin"
+    ],
+    "support": {
+        "docs": "https://github.com/craft3pluginbase/arham-plugin/blob/master/README.md",
+        "issues": "https://github.com/craft3pluginbase/arham-plugin/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arham",
+            "homepage": "https://github.com/aanimation/craft3pluginbase"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "aanimation\\arhamplugin\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "ArhamPlugin",
+        "handle": "arham-plugin",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/craft3pluginbase/arham-plugin/master/CHANGELOG.md",
+        "components": {
+            "arham": "aanimation\\arhamplugin\\services\\Arham"
+        },
+        "class": "aanimation\\arhamplugin\\ArhamPlugin"
+    }
+}
